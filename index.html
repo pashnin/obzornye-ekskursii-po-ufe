@@ -3,171 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие обзорные экскурсии по Уфе</title>
-    <meta name="title" content="Лучшие обзорные экскурсии по Уфе">
-    <meta name="description" content="Лучшие обзорные экскурсии по Уфе на 2026 год">
-    <meta name="author" content="Анфиса Медведева">
-    <meta name="keywords" content="Лучшие обзорные экскурсии по Уфе Лучшие обзорные экскурсии по Уфе на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="26ce026e7978e605">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://obzornye-ekskursii-po-ufe.vercel.app">
-    <meta property="og:title" content="Лучшие обзорные экскурсии по Уфе">
-    <meta property="og:description" content="Лучшие обзорные экскурсии по Уфе на 2026 год">
-    <meta property="og:image" content="https://obzornye-ekskursii-po-ufe.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие обзорные экскурсии по Уфе">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:15:19+00:00">
-    <meta property="article:author" content="Анфиса Медведева">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://obzornye-ekskursii-po-ufe.vercel.app">
-    <meta name="twitter:title" content="Лучшие обзорные экскурсии по Уфе">
-    <meta name="twitter:description" content="Лучшие обзорные экскурсии по Уфе на 2026 год">
-    <meta name="twitter:image" content="https://obzornye-ekskursii-po-ufe.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Анфиса Медведева">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие обзорные экскурсии по Уфе",
-        "description": "Лучшие обзорные экскурсии по Уфе на 2026 год",
-        "image": "https://obzornye-ekskursii-po-ufe.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:15:19+00:00",
-        "dateModified": "2026-01-10T21:15:19+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Анфиса Медведева",
-            "description": "Эксперт в области культурного туризма и исторической архитектуры, автор многочисленных статей о развитии российских городов. Имеет высшее образование в области истории и архитектуры, а также многолетний опыт проведения экскурсионных программ. Специализируется на Уфе, глубоко изучая ее архитектурное наследие и культурные особенности, что позволяет делиться уникальными знаниями и увлекательными фактами о городе.",
-            "image": "https://ui-avatars.com/api/?name=Анфиса+Медведева&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие обзорные экскурсии по Уфе",
-            "url": "https://obzornye-ekskursii-po-ufe.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://obzornye-ekskursii-po-ufe.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://obzornye-ekskursii-po-ufe.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 882,
-        "timeRequired": "PT4M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие обзорные экскурсии по Уфе</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:15:19+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:15:19+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT4M">Время чтения: 4 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Анфиса+Медведева&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Анфиса Медведева" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Анфиса+Медведева&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Анфиса Медведева</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и исторической архитектуры, автор многочисленных статей о развитии российских городов. Имеет высшее образование в области истории и архитектуры, а также многолетний опыт проведения экскурсионных программ. Специализируется на Уфе, глубоко изучая ее архитектурное наследие и культурные особенности, что позволяет делиться уникальными знаниями и увлекательными фактами о городе.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие обзорные экскурсии по Уфе">
-            <meta itemprop="description" content="Лучшие обзорные экскурсии по Уфе на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:15:19+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:15:19+00:00">
-            <meta itemprop="timeRequired" content="PT4M">
-            <meta itemprop="wordCount" content="882">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Узнать больше</a></p><p>Экскурсии по истории и архитектуре Уфы — это погружение в прошлое столицы Башкортостана. Здесь можно узнать, как развивался город, какие здания считаются его визитной карточкой, и почему Уфа сегодня выглядит так, как мы её знаем. Маршруты рассчитаны на любителей истории, ценителей архитектуры и тех, кто хочет глубже понять культуру региона. Гиды делятся интересными фактами, легендами и рассказывают о скрытых деталях уфимской застройки.</p><p>Обзорная экскурсия по Уфе с посещением музея архитектуры и истории<br> Во время обзорной экскурсии вы узнаете историю основания города, посетите музей архитектуры и истории и сможете увидеть важнейшие достопримечательности Уфы. Программа сочетает пешую прогулку и трансфер, чтобы охватить максимальное количество локаций. Экскурсия подходит как для первооткрывателей, так и для тех, кто хочет углубить свои знания о городе.<br> <b>Плюсы</b>:<br> Комфортный темп<br> Интересные факты из истории города<br> Посещение музея в программе</p><p><b>Отзывы</b>:<br> Участники отмечают информативность гида, хорошее сочетание пеших и автомобильных участков маршрута, а также насыщенную программу.</p><p><b>Цена</b>: 2600 руб. за человека</p><h2>Прогулка по старому городу: тайны уфимских особняков<br> Эта экскурсия раскроет вам скрытые истории старинных особняков, спрятанных среди современных улиц. Вы узнаете, кто жил в этих домах, как они строились и что сохранилось внутри до наших дней. Прогулка проходит в не самых туристических районах, где можно прочувствовать дух настоящей Уфы.<br> <b>Плюсы</b>:<br> Необычные маршруты<br> Локации вне типичных туристических троп<br> Подробные рассказы о жизни горожан прошлого</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Туристы хвалят атмосферу старины, энтузиазм гида и возможность увидеть малоизвестные уголки города.</p><p><b>Цена</b>: 1800 руб. за человека</p><h2>Архитектурный квест по центру Уфы<br> Квест-экскурсия для тех, кто любит активно участвовать в процессе. Поиск ответов на загадки и задания помогут лучше разобраться в архитектурных особенностях города. Это не просто прогулка, а интерактивное путешествие по самым заметным зданиям Уфы.<br> <b>Плюсы</b>:<br> Занимательная форма подачи информации<br> Вовлечение в процесс<br> Возможность пройти квест в компании друзей</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Пользователи говорят о необычном формате, весёлом времяпрепровождении и новом взгляде на знакомые места.</p><p><b>Цена</b>: 2500 руб. за человека</p><h2>Ночная прогулка по Уфе: история и световые инсталляции<br> Экскурсия после заката — уникальная возможность увидеть Уфу в другом свете. Вы услышите исторические анекдоты, посетите красиво подсвеченные здания и набережные, которые днём кажутся совсем другими. Ночь придаёт городу романтическое настроение.<br> <b>Плюсы</b>:<br> Необычная перспектива на город<br> Красивые фото в вечернем освещении<br> Расслабленная атмосфера</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Гости отмечают неожиданную красоту ночной Уфы, живость повествования и приятную компанию.</p><p><b>Цена</b>: 2000 руб. за человека</p><h2>Уфа глазами архитектора: от классицизма до хай-тека<br> Экскурсия для ценителей архитектуры. Гид, являющийся профессиональным архитектором, проведёт вас по зданиям разных эпох и объяснит, почему именно так они были спроектированы. От советского модернизма до современных бизнес-центров — вы узнаете всё о развитии уфимского дизайна.<br> <b>Плюсы</b>:<br> Профессиональный подход<br> Глубокие знания об архитектурных стилях<br> Образовательный формат</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Посетители благодарят за доступное объяснение сложных терминов и интересный маршрут.</p><p><b>Цена</b>: 3000 руб. за человека</p><h2>Дворцы и особняки Уфы: роскошь прошлого<br> Вы посетите самые роскошные дома Уфы — от имений купцов до правительственных зданий. Гид расскажет, как строились эти сооружения, какие секреты скрывают их интерьеры и чем они отличаются от европейских аналогов.<br> <b>Плюсы</b>:<br> Роскошные локации<br> История богатых семей<br> Впечатляющая архитектура</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Участники отмечают великолепные особенности, богатство деталей и увлекательные рассказы гида.</p><p><b>Цена</b>: 2200 руб. за человека</p><h2>Советская Уфа: архитектура и быт 60–80-х годов<br> Эта экскурсия рассказывает о том, как Уфа развивалась в советское время. Вы узнаете о принципах планирования микрорайонов, увидите образцы типовой застройки и поймёте, как менялась жизнь горожан. Также вас ждут интересные факты о культуре того времени.<br> <b>Плюсы</b>:<br> Ностальгия по советскому периоду<br> Понимание городской среды<br> Интересные детали повседневной жизни</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Туристы положительно отзываются о воспоминаниях, вызванных экскурсией, и полезной информации.</p><p><b>Цена</b>: 1900 руб. за человека</p><h2>Легенды и мифы Уфы: от истоков до наших дней<br> Экскурсия, сочетающая историю и фольклор. Вы услышите древние предания, связанные с рекой Белой, узнаете о возникновении города и о том, как местные легенды повлияли на развитие Уфы. Места, о которых рассказывают в школе, заиграют новыми красками.<br> <b>Плюсы</b>:<br> Сочетание истории и мифологии<br> Захватывающие истории<br> Эмоциональная подача</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Посетители хвалят атмосферу загадочности и неожиданную глубину известных событий.</p><p><b>Цена</b>: 2100 руб. за человека</p><h2>Заброшенные дворцы и тайны Уфы<br> Если вы любите атмосферу заброшенности и тайн, эта экскурсия для вас. Вы отправитесь в те части города, куда обычно не заглядывают туристы, и узнаете, какие объекты когда-то были шедеврами архитектуры, но сейчас находятся в запустении.<br> <b>Плюсы</b>:<br> Доступ к скрытым местам<br> Истории исчезнувших зданий<br> Атмосфера загадочности</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Участники пишут о необычных маршрутах, интересных версиях событий и ярких впечатлениях.</p><p><b>Цена</b>: 2300 руб. за человека</p><h2>Экскурсия по уфимским паркам и садам: от благоустройства до символики<br> Уфа славится своими парками. На этой экскурсии вы узнаете, как создавались парковые зоны, какие элементы имеют символическое значение, и как они влияли на жизнь горожан. Это сочетание истории, архитектуры и ландшафтного дизайна.<br> <b>Плюсы</b>:<br> Приятная атмосфера на природе<br> Информация о планировке города<br> Красивые места для фотографий</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a><p><b>Отзывы</b>:<br> Посетители отмечают интересные факты, ухоженные территории и удобный график.</p><p><b>Цена</b>: 1700 руб. за человека</p><h2>Вопросы для закрытия темы История и архитектура Уфы» :<br> Какие экскурсии по истории и архитектуре Уфы наиболее популярны у туристов?<br> Какие исторические особенности Уфы можно узнать во время экскурсий по архитектуре?<br> Какие экскурсии по истории и архитектуре Уфы подходят для семей с детьми?<br> Как выбрать экскурсию по истории и архитектуре Уфы для большой группы или корпоратива?<br> Какие <b>отзывы</b> оставляют туристы об экскурсиях по истории и архитектуре Уфы?<br> Какие экскурсии по истории и архитектуре Уфы включают посещение музеев или выставок?<br> Какие маршруты по истории и архитектуре Уфы подходят для любителей фотографии?<br> Какие необычные экскурсии по истории и архитектуре Уфы можно выбрать для вечернего отдыха?<br> Какие экскурсии по истории и архитектуре Уфы включают интерактивные или квестовые элементы?<br> Какова стоимость экскурсий по истории и архитектуре Уфы в 2025 году<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</h2><a href="https://experience.tripster.ru/experience/Ufa/4890-istoriya-i-arhitektura/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Ufa-4890">Подробнее</a>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table border="1" cellpadding="5" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Название экскурсии</th>
-            <th>Плюсы</th>
-            <th>Отзывы</th>
-            <th>Цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Обзорная экскурсия по Уфе</td>
-            <td>Комфортный темп, Интересные факты, Посещение музея</td>
-            <td>Информативность гида, хорошее сочетание маршрута</td>
-            <td>2600 руб. за человека</td>
-        </tr>
-        <tr>
-            <td>Прогулка по старому городу</td>
-            <td>Необычные маршруты, Локации вне туристических троп</td>
-            <td>Атмосфера старины, энтузиазм гида</td>
-            <td>1800 руб. за человека</td>
-        </tr>
-        <tr>
-            <td>Архитектурный квест по центру Уфы</td>
-            <td>Интерактивное путешествие, Активное участие</td>
-            <td>Увлекательность и вовлеченность</td>
-            <td>Цена не указана</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Анфиса Медведева. Все права защищены.</p>
+    <div class="s-dd25-page-shell">
+        <div class="s-dd25-site-topbar" aria-label="Навигация по статье">
+            <div class="s-dd25-site-topbar__brand">
+                <span class="s-dd25-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-dd25-article-layout">
+            <article class="s-dd25-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-dd25-hero">
+                    <div class="s-dd25-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-dd25-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-dd25-meta-card">
+                            <div class="s-dd25-meta-label">Дата публикации</div>
+                            <div class="s-dd25-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-dd25-meta-card">
+                            <div class="s-dd25-meta-label">Время чтения</div>
+                            <div class="s-dd25-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-dd25-meta-card">
+                            <div class="s-dd25-meta-label">Объём текста</div>
+                            <div class="s-dd25-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-dd25-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-dd25-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-dd25-author-info">
+                            <div class="s-dd25-author-name-row">
+                                <div class="s-dd25-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-dd25-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-dd25-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-dd25-article-body">
+                    <div class="s-dd25-article-content">
+
+                        <div class="s-dd25-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-dd25-table-card s-dd25-table-section" aria-labelledby="comparison-title">
+                <div class="s-dd25-section-head">
+                    <h2 id="s-dd25-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-dd25-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-dd25-footer-card s-dd25-article-footer">
+                <div class="s-dd25-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
